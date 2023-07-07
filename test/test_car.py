@@ -2,18 +2,12 @@ import unittest
 from datetime import datetime
 
 from car_factory import CarFactory
-from capulet_engine import CapuletEngine
-from spindler_battery import SpindlerBattery
-from willoughby_engine import WilloughbyEngine
-from sternman_engine import SternmanEngine
-from nubbin_battery import NubbinBattery
-
 
 
 class TestCalliope(unittest.TestCase):
     def test_battery_should_be_serviced(self):
         current_date = datetime.today().date()
-        last_service_date = current_date.replace(year=current_date.year - 3)
+        last_service_date = current_date.replace(year=current_date.year - 4)
         current_mileage = 0
         last_service_mileage = 0
 
@@ -51,7 +45,7 @@ class TestCalliope(unittest.TestCase):
 class TestGlissade(unittest.TestCase):
     def test_battery_should_be_serviced(self):
         current_date = datetime.today().date()
-        last_service_date = current_date.replace(year=current_date.year - 3)
+        last_service_date = current_date.replace(year=current_date.year - 4)
         current_mileage = 0
         last_service_mileage = 0
 
